@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Comarca Da Terra Cha - Lugo</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/menu.html"></include>
+    <!--modulo flickity (Carrusel)-->
+    <div class="carousel">
+      <div class="carousel-cell silueta"><h1 class="titulo m10">A comarca da Terra Cha</h1><h2 class="m10">Donde la llanura canta historias de Lugo</h2></div>
+      <div class="carousel-cell"><img src="./assets/images/torre_andrade_medieval.webp" alt="Festividad Medieval Vilalba"></div>
+      <div class="carousel-cell"><img src="./assets/images/cementerio_goiriz.jpeg" alt="Cementerio Goiriz"></div>   
     </div>
+    <main>
+      <section id="Cospeito">
+        <h2>Cospeito</h2>
+        <div class="content m10">
+          <div class="imagen"><img src="assets/images/lagoa_cospeito.jpg" alt="Lagoa de Cospeito"></div>
+          <div class="text"><p>Cospeito está situado en plena comarca de Terra Chá, a 28 km de la capital de la provincia, Lugo. Se caracteriza por tener un terreno completamente plano</p>
+          <p>El rio Miño cruza de norte a sur esta pequeño municipio lucense. Una de sus maravillas es su laguna, un grandísimo humedal con un gran número de especies: patos, garzas, ocas, un sin fin de aves que hacen disfrutar a los amantes de la ornitología y de la naturaleza.</p>
+          <p>Cospeito tiene mucho patrimonio, pero uno el más destacado y <i>saboredado</i> por sus visitantes es la Fiesta de la Filloa, declarada de interés turístico por la Xunta</p>
+          </div>
+        </div>
+      </section>
+      <section id="Vilalba">
+        <h2>Vilalba</h2>
+        <div class="content">
+          <div class="text"><p>Vilalba es la capital de la Terra Chá, a 36 km de Lugo. Se trata de un municipio plano, concretamente se situa a 487 metros de altura sobre el nivel del mar.</p>
+            <p>Su mayor patrimonio es la Torre de los Andrades. Se cree que fue construida en el Siglo XII aunque algunos historiadores citan que puedo ser antes del Siglo XI. Dicha fortaleza era feudo de don Fernán Ruiz de Castro, señor de Lemos, pero al parecer fue donada por el rey Sancho IV y su esposa María de Molina al infante don Felipe. Dicha donación supuso un enfrentamiento entre el de Lemos y el Infante, que acabó con la muerte de don Fernán Ruiz en un duelo celebrado en Monforte</p>
+            <p>Por esta hermosa villa pasa el camino de Santiago y se festejan multitud de celebraciones. La más destacada es la Feria del Capón, conocida a nivel nacional. En ella se venden los 'capones', pollos alimentados a mano, con unas bolas de masa de harina de maíz y patata, a los que durante la época de engorde se introducen en unas jaulas llamadas capoeiras para inmovilizarlos y acelerar su engorde hasta el momento de su sacrificio el día antes de la feria.</p>
+          </div>
+          <div class="imagen"><img src="assets/images/capon_vilalba.jpg" alt="Capón de Vilalba"></div>
+        </div>
+      </section>
+      <section id="Begonte">
+        <h2>Begonte</h2>
+        <div class="content">
+          <div class="imagen"><img src="assets/images/belen_begonte.jpg" alt="Belén eletrónico de Begonte"></div>
+          <div class="text"><p>Begonte está a tan solo 15 minutos de la capital provincial y a algo más de 30 minutos de las zonas portuarias de A Coruña, Burela y Viveiro. Como toda la comarca, es un municipio agrícola y ganadero</p>
+            <p>Begonte tiene espectaculares paisajes. Pasan dos rios por el municipio, Parga y Ladra. Es conocido por su Belén Electrónico que funciona desde diciembre hasta enero, tradición que se empezó en el 1972. También es conocida por la casa-museo de Víctor Corral, donde se exponen bellas esculturas.</p>
+          </div>
+        </div>
+      </section>
+      <section id="Otros">
+        <h2>Otros datos de interés</h2>
+        <div class="content">
+          <div class="text">
+            <p>La comarca de Terra chá está formada por otros siete municipios, concretamente: Abadín, Castro de Rey, Guitiriz, Muras, Pastoriza y Xermade</p>
+            <p>Se trata de una comarca rural, su motor económico es la ganaderia. Gracias a su clima y su orografía, A Terra Chá tiene una importante extensión de terreno destinados al pasto de los cuales se alimentan un gran número de vacas, la gran mayoría de ellas destinadas a la producción de leche. En las zonas más altas, predomina la producción cárnica y su producto es muy conocido, se trata de la vaca rubia gallega.</p>
+            <p>A Terra Chá es una comarca muy bien comunicada, a excasos minutos de la A6, 30 minutos de los puertos de Burela y Viverio; y a una hora del Aeropuerto de A Coruña</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
